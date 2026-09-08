@@ -1,0 +1,54 @@
+{
+    "BFS": {
+        "route": [
+            "A",
+            "B",
+            "D",
+            "F"
+        ],
+        "cost": 12,
+        "distance": 12,
+        "travel_time": 24,
+        "nodes_explored": 6,
+        "execution_time_ms": 0.0628
+    },
+    "Uniform Cost Search": {
+        "route": [
+            "A",
+            "B",
+            "E",
+            "F"
+        ],
+        "cost": 22.6,
+        "distance": 11,
+        "travel_time": 23,
+        "nodes_explored": 7,
+        "execution_time_ms": 0.0704
+    },
+    "Greedy Best-First Search": {
+        "route": [
+            "A",
+            "B",
+            "D",
+            "F"
+        ],
+        "cost": 23.8,
+        "distance": 12,
+        "travel_time": 24,
+        "nodes_explored": 4,
+        "execution_time_ms": 0.1616
+    },
+    "A* Search": {
+        "route": [
+            "A",
+            "B",
+            "E",
+            "F"
+        ],
+        "cost": 22.6,
+        "distance": 11,
+        "travel_time": 23,
+        "nodes_explored": 7,
+        "execution_time_ms": 0.0578
+    }
+}
