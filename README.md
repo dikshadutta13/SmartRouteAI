@@ -17,42 +17,18 @@ The implemented algorithms are:
 - Greedy Best-First Search
 - A* Search
 
-The system also incorporates road distance, estimated travel time, and traffic conditions into route evaluation. Users can compare the performance of different search algorithms and select their preferred optimization objective.
+The system also incorporates road distance, estimated travel time, and traffic conditions into route evaluation. Users can compare the performance of different algorithms and select their preferred optimization objective.
 
 ---
 
-## 2. Problem Statement
-
-Finding an appropriate route between two locations can involve multiple possible paths. A route with the shortest physical distance may not always be the most suitable route because traffic conditions and travel time can affect the overall cost.
-
-The objective of SmartRoute AI is to model route finding as an AI search problem and investigate how different search algorithms perform when solving the same routing problem under varying traffic conditions.
-
----
-
-## 3. Objectives
-
-The main objectives of the project are:
-
-1. Represent a road network using a graph-based structure.
-2. Formulate route finding as a search problem.
-3. Implement multiple AI search algorithms.
-4. Incorporate distance, travel time, and traffic conditions into route evaluation.
-5. Compare the performance of different search strategies.
-6. Allow users to modify traffic conditions dynamically.
-7. Provide route recommendations according to user preferences.
-8. Measure algorithm performance using computational metrics.
-9. Provide automated tests for important system components.
-
----
-
-## 4. Key Features
+## 2. Key Features
 
 ### Multiple Search Algorithms
 
 The system implements:
 
-- BFS
-- Uniform Cost Search
+- Breadth-First Search (BFS)
+- Uniform Cost Search (UCS)
 - Greedy Best-First Search
 - A* Search
 
@@ -108,137 +84,41 @@ The complete application can be executed through a terminal without requiring a 
 
 ---
 
-## 5. AI Problem Formulation
+## 3. Technologies / Tools Used
 
-The routing problem can be represented as a state-space search problem.
+### Programming Language
 
-### Initial State
+- Python
 
-The location selected by the user as the source.
+### Libraries
 
-### Goal State
+- Matplotlib
+- Python Standard Library
+- unittest
 
-The destination selected by the user.
+### Data Format
 
-### State
+- JSON
 
-A location in the road network.
+### Development Tools
 
-### Actions
-
-Moving from the current location to a connected location.
-
-### State Space
-
-The collection of locations and their connections in the road network.
-
-### Path
-
-A sequence of connected locations from the source to the destination.
-
-### Path Cost
-
-The calculated cost associated with travelling through a route based on the implemented cost model.
-
-### Heuristic
-
-An estimated cost used by heuristic search algorithms to guide the search toward the destination.
+- Visual Studio Code
+- Git
+- GitHub
 
 ---
 
-## 6. Algorithms Used
+## 4. Installation & Running
 
-### 6.1 Breadth-First Search
+### Prerequisites
 
-BFS explores nodes level by level using a queue.
+The following software is required:
 
-It is useful as a baseline search strategy and finds a path with the minimum number of edges in an unweighted graph.
+- Python 3.9 or higher
+- pip
+- Git
 
----
+Check the installed Python version:
 
-### 6.2 Uniform Cost Search
-
-Uniform Cost Search expands the node with the lowest accumulated path cost.
-
-It is suitable for graphs where different paths have different costs.
-
----
-
-### 6.3 Greedy Best-First Search
-
-Greedy Best-First Search uses a heuristic function to select the node estimated to be closest to the goal.
-
-It focuses primarily on the estimated remaining cost.
-
----
-
-### 6.4 A* Search
-
-A* combines the actual cost accumulated so far with an estimated cost to the goal.
-
-The evaluation function is:
-
-f(n) = g(n) + h(n)
-
-where:
-
-- g(n) = cost from the initial state to node n
-- h(n) = estimated cost from node n to the goal
-- f(n) = estimated total cost through node n
-
----
-
-## 7. Traffic and Cost Model
-
-The system represents traffic using three levels:
-
-| Traffic Level | Multiplier |
-|---|---:|
-| Low | 1.0 |
-| Medium | 1.5 |
-| High | 2.0 |
-
-The route cost considers the road distance, traffic penalty and travel-time component.
-
-The cost engine allows the system to distinguish between routes that may have similar distances but different traffic conditions.
-
----
-
-## 8. System Workflow
-
-```text
-                    USER
-                      |
-                      v
-              Select Source
-                      |
-                      v
-            Select Destination
-                      |
-                      v
-           Select Optimization Mode
-                      |
-                      v
-                Load Graph
-                      |
-          +-----------+-----------+
-          |           |           |
-          v           v           v
-         BFS         UCS       Greedy
-          |           |           |
-          +-----------+-----------+
-                      |
-                      v
-                     A*
-                      |
-                      v
-              Calculate Metrics
-                      |
-                      v
-             Compare Algorithms
-                      |
-                      v
-             Select Recommendation
-                      |
-                      v
-                 Display Result
+```bash
+python --version
