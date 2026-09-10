@@ -123,9 +123,36 @@ The following software is required:
 
 The project includes automated test cases to verify the functionality of the implemented search algorithms and important edge cases.
 
-### Test File
 
-The automated tests are located in:
 
-```text
-tests/test_algorithms.py
+## 6. Screenshots
+
+### 6.1 Main Menu
+
+The SmartRoute AI application provides a command-line interface through which users can access route optimization, traffic updates, algorithm comparison, and performance analysis features.
+
+![SmartRoute AI Main Menu](screenshots/01_main_menu.png)
+
+### 6.2 Route Optimization
+
+The system accepts a source and destination and calculates an optimized route using the selected search algorithm.
+
+![Route Optimization](screenshots/02_route_optimization.png)
+
+### 6.3 Traffic-Aware Routing
+
+The system incorporates traffic conditions into the route cost calculation to support traffic-aware route selection.
+
+![Traffic-Aware Routing](screenshots/03_traffic_aware_route.png)
+
+### 6.4 Algorithm Comparison
+
+The application compares BFS, Uniform Cost Search, Greedy Best-First Search, and A* Search using route and performance metrics.
+
+![Algorithm Comparison](screenshots/04_algorithm_comparison.png)
+
+### 6.5 Performance Analysis
+
+The generated performance results allow comparison of the implemented algorithms based on metrics such as execution time, nodes explored, and route cost.
+
+![Performance Analysis](screenshots/05_performance_analysis.png)
