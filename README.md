@@ -151,8 +151,4 @@ The application compares BFS, Uniform Cost Search, Greedy Best-First Search, and
 
 ![Algorithm Comparison](screenshots/04_algorithm_comparison.png)
 
-### 6.5 Performance Analysis
 
-The generated performance results allow comparison of the implemented algorithms based on metrics such as execution time, nodes explored, and route cost.
-
-![Performance Analysis](screenshots/05_performance_analysis.png)
