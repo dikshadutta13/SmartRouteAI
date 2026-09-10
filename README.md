@@ -118,7 +118,14 @@ The following software is required:
 - pip
 - Git
 
-Check the installed Python version:
 
-```bash
-python --version
+## 5. Testing
+
+The project includes automated test cases to verify the functionality of the implemented search algorithms and important edge cases.
+
+### Test File
+
+The automated tests are located in:
+
+```text
+tests/test_algorithms.py
